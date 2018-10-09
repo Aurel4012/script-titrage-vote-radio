@@ -1,0 +1,107 @@
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+#logo { position:absolute; top:0px; left:0px; }
+
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	width: 100%;
+	position:absolute; top:387px; left:0px;background-image:url(../images/boutons/fd_off.jpg); background-repeat:repeat-x;
+	padding-left:280px;
+}
+
+
+
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;background-image:url(../images/boutons/fd_off.jpg);
+}
+
+ul.tabs li a { padding:0px; margin:0px;  display: block; outline:none;  }
+
+
+ul.tabs li b {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+	padding:37px 14px 35px 37px; float:left; text-transform:uppercase;
+}
+
+ul.tabs li span {
+	display: block;
+	background-image:url(../images/boutons/ombre.png);
+	background-repeat: no-repeat;
+	width:23px; height:86px; float:right;
+}
+
+
+ul.tabs li:hover {position: relative;background-image:url(../images/boutons/fd_off_hover.jpg);}	
+ul.tabs li:hover b { color:#CCC;}	
+
+
+ul.tabs li.active {	position: relative;background-image:url(../images/boutons/fd_on.jpg);}
+ul.tabs li.active b { color:#000;}
+ul.tabs li.active span { background-image:none; }
+
+
+
+.tab_container { position:absolute; top:110px; left:0px; width:924px; height:277px; }
+
+
+.simpleTabs {float: left;}
+.player { width:600px; height:260px; background-image:url(../images/player.png); margin:8px 0px 0px 5px; float:left; }
+.player h1 { margin:0px; padding:0px; font-size:13px; text-transform:uppercase; color:#FFF; position:absolute; left:45px; top:93px; }
+.player h2 { position:absolute; left:300px; top:18px; margin:0px; padding:0px; font-size:13px; color:#333; }
+.player #pochette { position:absolute; left:33px; top:124px; width:131px; height:131px; }
+.player #titreencours { position:absolute; left:175px; top:147px; color:#FFF; text-transform:uppercase; font-weight:bold; width:390px;  padding:5px; overflow:hidden; background-color:#1A1A1A; border:solid 1px #333;  }
+.player #titreencours  a { display:none;}
+#pub300x250 { float:left; margin:13px 0px 0px 8px; width:300px; height:250px; }
+.player_flash { position:absolute; top:390px; left:10px; z-index:999;}
+
+.topvote { width:907px; height:260px; background-image:url(../images/fdplein.png); margin:8px 0px 0px 5px; float:left; }
+#top10 { position:absolute; top:70px; left:0px; padding:20px; color:#000; width:95%; }
+#top10 span { color:#000;}
+h4 { margin:0px; padding:0px; color:#FFF; position:absolute; top:31px; left:310px; font-size:15px; text-transform:uppercase; }
+
+
+
+
+/* Actualité */
+.actualite { width:907px; height:260px; background-image:url(../images/fdplein.png); margin:8px 0px 0px 5px; float:left; }
+.b_actu { margin:85px 0px 0px 17px; }
+#actualite { position:absolute; top:70px; left:0px; padding:20px; color:#000; width:95%; }
+#actualite span { color:#000;}
+.tour_actu { width:282px; height:75px; margin:0px 10px 10px 0px;  float:left; border:solid 1px #999; position:relative; }
+.tour_actu:hover { background-color:#CCC;}
+.tour_actu img { position:absolute; top:3px; left:3px;}
+.tour_actu a { position:absolute; left:80px; top:5px; font-weight:bold; font-size:12px; color:#333; text-transform:uppercase; text-decoration: none;}
+.tour_actu a:hover { color:#000; }
+
+/* Chat */
+.chat { position:absolute; width:914px; height:407px; margin:0px; top:-110px; left:0px; z-index:999; }
+
+/* En ce moment */
+#emission_en_cours  { width:290px; height:61px; position:absolute; left:305px; top:45px;}
+#emission_en_cours .gauche { width:62px; height:57px; float:left; }
+#emission_en_cours .gauche img { width:57px; height:57px; }
+#emission_en_cours .droite_emissions { width:228px; height:57px; float:left; color:#FFF; }
+#emission_en_cours .droite_emissions h3 { display:none; }
+#emission_en_cours .droite_emissions p { margin:0px; padding:0px;}
+#emission_en_cours .droite_emissions b { font-size:11px; text-transform:uppercase;}
+#emission_en_cours .droite_emissions a.txt_voir_fiche { color:#CCC; font-size:10px;}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Document sans titre</title>
+<script>
+
+function refresh_div()
+
+{
+
+var xhr_object = null;
+
+if(window.XMLHttpRequest)
+
+{ // Firefox
+
+xhr_object = new XMLHttpRequest();
+
+}
+
+else if(window.ActiveXObject)
+
+{ // Internet Explorer
+
+xhr_object = new ActiveXObject('Microsoft.XMLHTTP');
+
+}
+
+var method = 'POST';
+
+var filename = 'nowaccueil.php';
+
+xhr_object.open(method, filename, true);
+
+xhr_object.onreadystatechange = function()
+
+{
+
+if(xhr_object.readyState == 4)
+
+{
+
+var tmp = xhr_object.responseText;
+
+document.getElementById('mon_div').innerHTML = tmp;
+
+}
+
+}
+
+xhr_object.send(null);
+
+setTimeout('refresh_div()', 10000);
+
+}
+
+</script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #ffffff;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style></head>
+<body onload='refresh_div();'>
+<div align="center"></div>
+<div id='mon_div'>
+</div>
+</body>
+</html>
